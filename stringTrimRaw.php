@@ -9,3 +9,5 @@
         }
         echo $var1[$i];
     } 
+
+// Output : Hello World
