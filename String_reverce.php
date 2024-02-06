@@ -42,4 +42,3 @@ while ($i >= 0) {
 }
 
 echo $reversedString; // Output: !dlrow ,olleH
-

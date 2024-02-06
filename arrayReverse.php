@@ -1,4 +1,17 @@
 <?php
+
+function reverseArray($arr){
+  $reverseArr = [];
+  for($i=count($arr) -1; $i>=0; $i--){
+    $reverseArr[] .= $arr[$i];
+  }
+  echo'<pre>'; print_r($reverseArr);
+}
+echo reverseArray(array(1,2,3,4,5,6,7,8,9,10));
+// exit;
+/* -------------------------------------------------------------- */
+
+
 function reverse($data){
   // print_r($data);
   $len = count($data);
