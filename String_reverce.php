@@ -1,5 +1,15 @@
 <?php 
 // ! Reverse a String: 
+// Short way reverse string.
+function rev($n) {
+	  $revStr = "";
+    for($i=strlen($n) -1; $i>=0; $i--){
+      $revStr .= $n[$i];
+    }
+    return $revStr;
+}
+echo rev("hello");
+
 // * Implement a function to reverse a string without using built-in reverse functions.
 
     $originalString = "string";
