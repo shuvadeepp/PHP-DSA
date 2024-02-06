@@ -9,7 +9,7 @@ function rev($n) {
     return $revStr;
 }
 echo rev("hello");
-
+// ---------------------------------------------------------------
 // * Implement a function to reverse a string without using built-in reverse functions.
 
     $originalString = "string";
@@ -29,7 +29,7 @@ echo rev("hello");
     // echo $originalString;
     echo $reverseString;
 
-
+// ---------------------------------------------------------------
 // using strlen function
 
 $string = "Hello, world!";
