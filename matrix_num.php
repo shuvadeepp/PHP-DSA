@@ -1,12 +1,12 @@
 <?php 
 
 /* MATRIX NUMBER */
-
- for ($i = 1; $i <= 9; $i++) {
-        if ($i % 3 == 1) {
-            echo $i . $i + 1 . $i + 2 . '<br>';
-        }
+for($i=1; $i<=6; $i++){
+    echo $i;
+    if($i % 3 == 0){
+        echo '<br>';
     }
+}
 
     /* 
         OUTPUT: 
