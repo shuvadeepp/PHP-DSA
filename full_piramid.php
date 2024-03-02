@@ -1,6 +1,6 @@
 <?php 
 
-function trangle_pyramid($n){
+function trangle_pyramid($n){ 
     $k=2 * $n -2; // 8
     for($i=0; $i<$n; $i++){
       // echo $i; // 01234
