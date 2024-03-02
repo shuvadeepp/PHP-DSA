@@ -8,5 +8,5 @@ function oddEven($num) {
     }
 }
 
-$print = oddEven(2);
+$print = oddEven(5);
 echo $print;
