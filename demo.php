@@ -1,18 +1,149 @@
-<?php 
+<?php
 
-$arr = [100, 50, 40, 55, 43, 10, 5, 4, 11, 77, 62];
-$first = $arr[0];
-$second = $arr[0];
-for($i = 0; $i < count($arr); $i++) {
-    //  echo $arr[$i],'< ' $first,;
-    if($arr[$i] < $first){
-        $second = $first; 
-        $first = $arr[$i];
-    } else if($second < $arr[$i] && $arr[$i] > $first) {
-        $second = $arr[$i];
+
+// $n=5;
+// for($i=1; $i<=$n; $i++){
+//     for($j=1; $j<=$n; $j++){
+//         if($i==$j || $i+$j==$n+1){
+//             echo $j;
+//         } else {
+//             echo "&nbsp;&nbsp;&nbsp;&nbsp;"; 
+//         }
+//     }
+//     echo "<br>";
+// }
+
+// $n=5;
+// for($i=0;$i<$n;$i++){
+//     for($j=0;$j<(2*$n);$j++){
+//         if($j>=$n-($i-1) && $j<=$n+($i-1)){
+//             echo $j;
+//         } else{
+//             echo "&nbsp;&nbsp;";
+//         }
+//     }
+//     echo "<br>";
+// }
+// for($i=$n; $i>=0; $i--){
+//     for($j=0;$j<(2*$n);$j++){
+//         if($j>=$n-($i-1) && $j<=$n+($i-1)){
+//             echo $j;
+//         } else{
+//             echo "&nbsp;&nbsp;";
+//         }
+//     }
+//     echo "<br>";
+// }
+
+// $n=5;
+// for($i = 1; $i <$n; $i++) {
+//     for($j = 1; $j <(2 * $n); $j++) {
+//         if($j>=$n-($i-1) && $j<=$n+($i-1)){
+//             echo $j;
+//         } else{
+//             echo "&nbsp;&nbsp;";
+//         }
+//     }
+//     echo "<br>";
+// }
+// for($i=$n; $i>=1; $i--) { 
+//     for($j = 1; $j<(2 * $n); $j++) {
+//         if($j>=$n-($i-1) && $j<=$n+($i-1)){
+//             echo $j;
+//         }else {
+//             echo "&nbsp;&nbsp;";
+//         }
+//     }
+//     echo "<br>";
+// }
+
+
+// for($i=0;$i<5;$i++) {
+//     for($j=0;$j<$i;$j++) {
+//         echo "*";
+//     }
+//     echo "<br>";
+// }
+// for($i=5;$i>0;$i--) {
+//     for($j=0;$j<$i;$j++) {
+//         echo "*";
+//     }
+//     echo "<br>";
+// }
+
+  
+
+
+
+// for($i=0; $i<5; $i++){
+//     for($j=0; $j<$i; $j++){
+//       echo "*";
+//     }
+//     echo "<br>";
+//   }
+//   for($i=5; $i>=0; $i--){
+//     for($j=0; $j<$i; $j++){
+//         echo "*";
+//     }
+//     echo "<br>";
+//   }
+
+// $arr = [7, 12, 9, 4, 11];
+// $small = $arr[0];
+// for($i = 1; $i <count($arr); $i++){
+//     if($arr[$i] < $small){
+//         $small = $arr[$i];
+//     }
+// }
+// echo $small;
+// function fibonacci($n){
+//     $arr=[0, 1];
+//     for($i=2; $i<$n; $i++){
+//         $arr[$i] = $arr[$i-1] + $arr[$i-2];
+//     }
+//     return $arr;
+// }
+// echo'<pre>';print_r(fibonacci(10));
+// for($i=0; $i<=5; $i++){
+//     for($j=0; $j<=$i; $j++){
+//         echo "*";
+//     }
+//     echo "<br>";
+// }
+// for($i=5; $i>=0; $i--){
+//     for($j=0; $j<=$i; $j++){
+//         echo "*";
+//     }
+//     echo "<br>";
+// }
+
+/* $n=5;
+for($i=0; $i<=$n; $i++) {
+    // echo $i . "<=" . 2*$n,', ';
+    for($j=0; $j<=(2*$n) -1; $j++) {
+        // echo $j . "<=" . 2*$n,'<br> '; 
+        if($j >= $n - ($i-1) && $j <= $n + ($i-1)) {
+            echo "*";
+        } else {
+            echo "&nbsp;&nbsp;";
+        }
     }
-}
-echo $second;
+    echo "<br>";
+} */
+
+// $arr = [100, 50, 40, 55, 43, 10, 5, 4, 11, 77, 62];
+// $first = $arr[0];
+// $second = $arr[0];
+// for($i = 0; $i < count($arr); $i++) {
+//     //  echo $arr[$i],'< ' $first,;
+//     if($arr[$i] < $first){
+//         $second = $first; 
+//         $first = $arr[$i];
+//     } else if($second < $arr[$i] && $arr[$i] > $first) {
+//         $second = $arr[$i];
+//     }
+// }
+// echo $second;
 
 // echo $compare;
 
