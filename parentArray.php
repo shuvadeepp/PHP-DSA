@@ -48,10 +48,7 @@ $jsonData = '[
 $usersArray = json_decode($jsonData, true);
 
 //echo'<pre>';print_r($usersArray);
- 
-
-$get_parent = array_search("user2", array_column($usersArray, "name"));
-// echo'<pre>';print_r($usersArray[$get_parent]);
+  
 
 $newArr = []; 
 
