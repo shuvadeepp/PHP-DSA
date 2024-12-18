@@ -1,10 +1,130 @@
 <?php
-for($i=0; $i<5; $i++){
-    for($j=0; $j<$i; $j++){
-      echo "*";
+
+// Reverse number another way.
+
+function reverseNumber($revNum){
+    // echo $revNum;
+    $reversed=0;
+    while($revNum != 0) {
+        $digit=$revNum%10;
+        $reversed=$reversed * 10 + $digit;
+        $revNum= (int)$revNum/10;
+        // echo $revNum; 
     }
-    echo "<br>";
+    return $reversed;
 }
+
+$revNum=987654;
+$reverseNumber=reverseNumber($revNum);
+echo $reverseNumber;
+
+
+
+// $str="bhubaneswar";
+// $pos= strpos($str, 'war');
+// echo substr($str, 0, $pos);
+
+
+// $var1 = 'Hello World! This is my first programme.'; 
+// $num=0;
+// for($i=0;$i<strlen($var1); $i++){
+//     // echo $var1[$i];
+//     $arr = array('a','e','i','u','o');
+//     if(in_array($var1[$i], $arr)){
+//         $num++;
+//     }
+// }
+// echo $num;
+
+
+// function febo($n){
+//     $arr= [0, 1];
+//     for($i=2; $i<$n; $i++){
+//         $arr[$i] = $arr[$i -1] + $arr[$i -2];
+//     }
+//     return $arr;
+// }
+// $returlt = febo(10);
+// echo implode(", ", $returlt);
+
+// function arrrev($arr){
+//     // print_r($arr);
+//     $null_arr = [];
+//     for($i=count($arr) -1; $i >= 0; $i--){
+//         $null_arr[] .= $arr[$i];
+//     }
+//     return $null_arr;
+// }
+// echo'<pre>';print_r(arrrev([1,2,3,4,5,6,7,8,9,10]));
+
+// function rev($str){
+//     // return strrev($str);
+//     $null_variable = "";
+//     for($i=strlen($str) -1; $i>0; $i--){
+//         $null_variable .= $str[$i];
+//     }
+//     return $null_variable;
+// } 
+// echo rev("shuvadeep");
+ 
+
+// $arr = [
+//     'name'=> 'pheonix',
+//     'email'=> 'pheonix10@gmail.com',
+//     'mob'=> '998855172',
+//     'sub'=> ['math,science,english'],
+//     'number'=> ['a'=>1, 'b'=>2,'c'=>3]
+// ];
+
+/* 
+
+Array
+(
+    [name] => pheonix
+    [email] => pheonix10@gmail.com
+    [mob] => 998855172
+    [sub] => Array
+        (
+            [0] => math,science,english
+        )
+
+    [number] => Array
+        (
+            [a] => 1
+            [b] => 2
+            [c] => 3
+        )
+
+)
+
+*/
+// echo'<pre>'; print_r($arr);
+// foreach($arr as $ky => $val){
+//     // echo'<pre>';print_r($ky);
+//     if($ky == "sub"){
+//         for($i=0; $i<count($val); $i++){
+//             echo ucfirst($ky).": ".$val[$i]."<br>";
+//         }
+//     }else if($ky == "number"){
+//         echo ucfirst($ky).": <br>";
+//         foreach($val as $k=>$numval){
+//             echo ucfirst($k).": ".$numval,'<br>';
+//         }
+//     }else {
+//         echo ucfirst($ky).": ".$val."<br>";
+//     }
+
+      
+// }
+
+
+
+// for($i=0; $i<5; $i++){
+//     for($j=0; $j<$i; $j++){
+//       echo "*";
+//     }
+//     echo "<br>";
+// }
 
 // $n=5;
 // for($i=1; $i<=$n; $i++){
