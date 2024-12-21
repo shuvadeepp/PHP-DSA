@@ -18,7 +18,7 @@
  
 // print_r($total);
 
-// another way to using array_map function
+// another way to using array_map function: 
 
 $arr = [1,3,2,3,2,4]; 
 function get_unique($param){
