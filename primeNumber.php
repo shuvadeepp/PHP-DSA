@@ -1,18 +1,25 @@
 <?php 
 
-    // Prime Number:-
-    function primeNum($primeNum){
-        
-        for($var = 2; $var <= $primeNum; $var++){ 
-            for($let = 2; $let < $var; $let++){ 
-                if($var % $let == 0){ 
-                    break;
-                }
-            } 
-            if($let == $var){
-                echo "Prime number:" . $var . "<br>";   
+// Prime Number:- 
+
+function chkPrime($num){
+    // echo $num;
+    if($num < 1){
+        $res="sorry! cannot get prime number ";
+    }else{
+        $count=0;
+        for($i=1; $i<=$num; $i++){  
+            if($num % $i == 0){ 
+                $count++; 
             }
+        } 
+        if($count == 2){
+            $res= "Prime number";
+        }else {
+            $res= "Not prime number";
         }
     }
-
-    $print_prime = primeNum(13); 
+    return $res;
+}
+$chkPrime= chkPrime(1);
+echo $chkPrime;

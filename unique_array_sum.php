@@ -35,7 +35,7 @@ foreach($arr as $val){
 } 
 array_map("get_unique", $unique);
 
-// print_r(get_unique(0));
+print_r(get_unique(0));
 
 /* without using pre-defind function : */
 
